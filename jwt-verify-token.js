@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicHJhc2FudGgiLCJhZ2UiOjQwLCJyb2xlIjoiZGV2ZWxvcGVyIiwiaWF0IjoxNzI2OTA4MzE0LCJleHAiOjE3MjY5OTQ3MTR9.k3GbI4yojdt_Pri3wbd-pez2-B6gxwu_7r6eBCz1AHE";
-
+  // "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNzM3OTYxNTExLCJleHAiOjE3MzgwNDc5MTF9.f_bCpaSdwFSkm1g0633SZsUiVX6fuFooRWVoq5lcJWQ";
 jwt.verify(token, "fsd58we-t-secret", (err, decodedPayload) => {
   if (err) {
     console.log(err);
